@@ -1,5 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #111;
+}
+
+h1 {
+    text-align: center;
+}
+
+.site-header {
+    background-color: rgb(248, 94, 38);
+    color: #f1f1f1;
+    min-height: 120px;
+    padding: 20px;
+}
+.site-header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
+.navigation {
+    background-color: black;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.0rem;
+    font-weight: 400;
+}
+
+main {
+    max-width: 1180px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+main h1 {
+    text-align: center;
+    font-size: 8px 0 24px;
+    font-weight: 500;
+}
+.cards {
     display: grid;
-    height: 100vh;
-    grid-template: auto 1fr auto / 300px 1fr auto;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+}
+.card {
+    border: 1px solid; 
+    border-radius: 12px;
+    overflow: hidden;
+    background-color:whitesmoke;
+}
+.card-tittle {
+    background-color: cadetblue;
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+    font-size: 2rem;
+}
+.card-body {
+    padding: 16px;
+    font-size: 1.2rem;
+    line-height: 1.55;
+}
+.about-top {
+    display: grid;
+    align-items: start;
+
+}
+.about-top img {
+    width: 100%;
+    border: 1px solid #111;
+}
+.country {
+    margin-top: 10px;
+}
+.country h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+    margin: 10px 0 12px;
+}
+.country-background {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    align-items: start;
+    gap: 15px;
+
+}
+.country-background img {
+    width: 100%;
+    border: 1px solid;
+    display: block;
+}
+.country-background p {
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+footer {
+    background-color:rgb(248, 94, 38) ;
+    color: #fff;
+    text-align: center;
+    padding: 14px 10px 18px;
+    font-size: 2rem;
+
 }

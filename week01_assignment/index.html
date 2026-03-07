@@ -4,52 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD131-Dynamic Fundamentsl-Alfred Kamisese</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <header>
-      <span id+"course-tittle">WDD131-Dynamic Web Fundamentls</span>
-      <nav>
-        <a href="www.linkedin.com/in/alfred-reeves-kamisese-27a32a205">LinkedIn</a>
-        <a href="https://byupw.instructure.com/.">Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a>
-      </nav>
+    <header class="site-header">
+        <h1>WDD131- Web Dynamic Fundamentals</h1>
     </header>
-
-    <main>
-        <h1>Alfred Reeves Kamisese</h1>
-
-        <section class="cards">
-            <h2> About Me</h2>
-            <img src="images/Alfred Portrait.png" alt="Profile Photo"/>
-            <p>
-                My name is Alfred R. Kamisese. I go by the name Alfred. I was born in the Island of Tonga.
-                I come from a small family and also have family of my own. I love photography and videography.
-                I take my camera with me almost everywhere I go. I love doing lanscape, street and portraits.
-                Love hiking and listening to music.
-            </p>
-        </section>
+   
+      <nav class="navigation">
+        <ul>
+            <li><a href="www.linkedin.com/in/alfred-reeves-kamisese-27a32a205">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+      </nav>
+ <main>
+    <h1>Alfred R. Kamisese</h1>
+    <div class="cards">
         <section class="card">
-            <h2> United States of America</h2>
-            <img src="images/USA Flag.webp"/>
-            <p>
-                The United States is a vast, diverse nation built on principles of individualism, liberty, and capitalism. Life here is
-                characterized by high mobility, a fast-paced work culture, and an emphasis on personal achievement and self-reliance. It
-                is a melting pot of cultures where freedom of speech and expression are paramount. While it offers significant
-                opportunities for economic advancement and innovation, it also presents challenges like high-income inequality.
-                Culturally, Americans value informality, punctuality, and a direct, often "larger-than-life" approach to daily life,
-                from food portions to career ambitions. It is a society constantly adapting, striving for equality, and focused on
-                future progress.
+            <h2 class="card-tittle">About Me</h2>
+            <div class="card-body">
+                <div class="about-top">
+                    <p>
+                        My name is Alfred R. Kamisese. I go by the name Alfred. I was born in the Island of Tonga.
+                        I come from a small family and also have family of my own. I love photography and videography.
+                        I take my camera with me almost everywhere I go. I love doing lanscape, street and portraits.
+                        Love hiking and listening to music.
+                    </p>
+                    <img src="images/Alfred Portrait.png" alt="Profile Photo" />
+            </div>
 
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>
-            &copy; <span id=""currentyear">Alfred Kamisese, USA</span>
-        </p>
-        <p id="lastModified"></p>
-    </footer>
+            <div class="country">
+                <h3>United States of America</h3>
+                <div class="country-background">
+                    <img src="images/USA Flag.webp" alt="Flag of USA">
+                    <p>
+                    The United States is a vast, diverse nation built on principles of individualism, liberty, and capitalism. Life here is
+                    characterized by high mobility, a fast-paced work culture, and an emphasis on personal achievement and self-reliance. It
+                    is a melting pot of cultures where freedom of speech and expression are paramount. While it offers significant
+                    opportunities for economic advancement and innovation, it also presents challenges like high-income inequality.
+                    Culturally, Americans value informality, punctuality, and a direct, often "larger-than-life" approach to daily life,
+                    from food portions to career ambitions. It is a society constantly adapting, striving for equality, and focused on
+                    future progress.
+                    </p>
+                </div>
+                </div>
+            </div>
+         </section>
+    </div>
+
+</main>
+<footer>
+    <p> &copy;<span id="currentyear"></span> Alfred Kamisese</p>
+    <p id="lastModified"></p>
+</footer>
 
 </body>
 </html>
