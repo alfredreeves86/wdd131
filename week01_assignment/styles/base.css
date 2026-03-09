@@ -8,10 +8,6 @@ body {
         color: #111;
 }
 
-h1 {
-    text-align: center;
-}
-
 .site-header {
     background-color: rgb(248, 94, 38);
     color: #f1f1f1;
@@ -54,8 +50,10 @@ main {
 }
 main h1 {
     text-align: center;
-    font-size: 8px 0 24px;
+    margin: 8px 0 24px;
     font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(2rem,4vw,4.2rem);
 }
 .cards {
     display: grid;
@@ -63,7 +61,7 @@ main h1 {
     grid-template-columns: 2fr 1fr;
 }
 .card {
-    border: 1px solid; 
+    border: 1px solid var(--card-border); 
     border-radius: 12px;
     overflow: hidden;
     background-color:whitesmoke;
@@ -71,7 +69,7 @@ main h1 {
 .card-tittle {
     background-color: cadetblue;
     margin: 0;
-    padding: 12px;
+    padding: 14px;
     text-align: center;
     font-size: 2rem;
 }
@@ -83,11 +81,27 @@ main h1 {
 .about-top {
     display: grid;
     align-items: start;
+    gap: 16px;
+    grid-template-columns: 1fr 220px;
 
+}
+
+.about-top p {
+    text-align: left;
+    margin: 0;
+    font-style: italic;
+    font-size: 1rem;
 }
 .about-top img {
     width: 100%;
     border: 1px solid #111;
+    max-width: 200px;
+    justify-self: end;
+    align-self: start;
+    display: block;
+    object-fit: cover;
+    
+    
 }
 .country {
     margin-top: 10px;
@@ -106,10 +120,18 @@ main h1 {
     gap: 15px;
 
 }
-.country-background img {
+.country-background figure {
+    margin: 0;
+}
+.country-background figure img {
     width: 100%;
     border: 1px solid;
     display: block;
+}
+.country-background figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.8rem;
 }
 .country-background p {
     text-align: center;
@@ -118,6 +140,23 @@ main h1 {
     font-size: 1rem;
 }
 
+.resources {
+    justify-self: stretch;
+    align-self: stretch;
+    border: 1px solid;
+}
+.resources .card-body {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 16px;
+}
+.resources ul {
+    margin: 0;
+    padding-left: 26px;
+    display: grid;
+    gap: 8px;
+    align-content: start;
+}
 footer {
     background-color:rgb(248, 94, 38) ;
     color: #fff;
