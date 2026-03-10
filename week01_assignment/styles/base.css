@@ -4,44 +4,42 @@
 
 body {
         margin: 0;
-        font-family: Georgia, 'Times New Roman', Times, serif;
         color: #111;
+        font-family: "Roboto", sans-serif;
 }
-
-.site-header {
-    background-color: rgb(248, 94, 38);
-    color: #f1f1f1;
-    min-height: 120px;
-    padding: 20px;
-}
-.site-header h1 {
-    font-size: 2.2rem;
-    margin: 0;
-    font-weight: 700;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+header {
+    color: white;
     text-align: center;
-
+    padding:14px 10px 18px;
+    font-size: 2rem;
+    background-color: rgb(248, 94, 38);
 }
+#course-tittle {
+    font-family: "Roboto";
+}
+
 .navigation {
     background-color: black;
 }
-
-.navigation ul {
-    list-style: none;
+.navigation-list {
     margin: 0;
-    padding: 18px 24px;
+    padding: 0px 24px;
+    list-style: none;
+    min-height: 52px;
     display: flex;
     justify-content: space-around;
-    align-items: center;    
+    gap: 12px;
+    align-items: center;
 }
-
-.navigation a {
-    color: white;
+.navigation-list a {
+    color: #fff;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.0rem;
-    font-weight: 400;
+    font-size: 2rem;
+    display: block;
+    padding: 12px 18px;
+    
 }
+.navigation-list a:hover
 
 main {
     max-width: 1180px;
@@ -55,25 +53,30 @@ main h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: clamp(2rem,4vw,4.2rem);
 }
-.cards {
+.about-me {
     display: grid;
-    gap: 10px;
     grid-template-columns: 2fr 1fr;
+    margin: 0 120px 28px;
+    gap: 10px;
+    align-items: stretch;
+    
 }
-.card {
-    border: 1px solid var(--card-border); 
+.my-info {
+    border: 1px solid #111; 
     border-radius: 12px;
     overflow: hidden;
     background-color:whitesmoke;
 }
-.card-tittle {
+.info-tittle {
     background-color: cadetblue;
     margin: 0;
     padding: 14px;
     text-align: center;
     font-size: 2rem;
+    color: #fff;
+    
 }
-.card-body {
+.info-body {
     padding: 16px;
     font-size: 1.2rem;
     line-height: 1.55;
@@ -117,7 +120,7 @@ main h1 {
     display: grid;
     grid-template-columns: 170px 1fr;
     align-items: start;
-    gap: 15px;
+    gap: 14px;
 
 }
 .country-background figure {
@@ -143,19 +146,31 @@ main h1 {
 .resources {
     justify-self: stretch;
     align-self: stretch;
-    border: 1px solid;
+    border: 1px solid black;
+    border-radius: 12px;
 }
-.resources .card-body {
+.resources-tittle {
+    background-color: cadetblue;
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 12px;
+    
+}
+.resources .resources-body {
     display: flex;
-    align-items: flex-start;
-    padding-top: 16px;
+    align-items: center;
+    padding: 16px;
+    min-height: 100%;
 }
 .resources ul {
     margin: 0;
     padding-left: 26px;
     display: grid;
     gap: 8px;
-    align-content: start;
+    align-content: center;
 }
 footer {
     background-color:rgb(248, 94, 38) ;
@@ -163,5 +178,23 @@ footer {
     text-align: center;
     padding: 14px 10px 18px;
     font-size: 2rem;
+}
+#lastModified {
+    color: #f4f765;
+    margin-top: 8px;
+    font-size: 1.35rem;
+}
 
+@media (max-width: 860px) {
+    .navigation-list {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 0;
+    }
+    .about-top {
+        grid-template-columns: 1fr;
+    }
+    .country-background {
+        grid-template-columns: 1fr;
+    }
 }
