@@ -32,14 +32,17 @@ header {
     align-items: center;
 }
 .navigation-list a {
-    color: #fff;
+    color: white;
+    transition: color 0.25s ease;
     text-decoration: none;
     font-size: 2rem;
     display: block;
     padding: 12px 18px;
     
 }
-.navigation-list a:hover
+.navigation-list a:hover {
+    color: darkgrey;
+}
 
 main {
     max-width: 1180px;
@@ -56,10 +59,7 @@ main h1 {
 .about-me {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 0 120px 28px;
-    gap: 10px;
-    align-items: stretch;
-    
+    gap: 10px;    
 }
 .my-info {
     border: 1px solid #111; 
@@ -90,13 +90,18 @@ main h1 {
 }
 
 .about-top p {
+    display: grid;
+    align-items: end;
     text-align: left;
     margin: 0;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
     font-style: italic;
     font-size: 1rem;
 }
 .about-top img {
-    width: 100%;
+    width: auto;
+    height: auto;
     border: 1px solid #111;
     max-width: 200px;
     justify-self: end;
@@ -114,7 +119,7 @@ main h1 {
     font-size: 1.5rem;
     padding-bottom: 6px;
     border-bottom: 1px solid;
-    margin: 10px 0 12px;
+    margin: 0 2.5em 1em;
 }
 .country-background {
     display: grid;
@@ -137,8 +142,10 @@ main h1 {
     font-size: 0.8rem;
 }
 .country-background p {
-    text-align: center;
     margin-top: 8px;
+    margin-right: 70px;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
     font-style: italic;
     font-size: 1rem;
 }
@@ -152,11 +159,11 @@ main h1 {
 .resources-tittle {
     background-color: cadetblue;
     margin: 0;
-    padding: 14px;
+    padding: .8rem;
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    border-radius: 12px;
+    border-radius: 10px 10px 0 0;
     
 }
 .resources .resources-body {
@@ -176,11 +183,11 @@ footer {
     background-color:rgb(248, 94, 38) ;
     color: #fff;
     text-align: center;
-    padding: 14px 10px 18px;
+    padding: 10px 12px 10px;
     font-size: 2rem;
 }
 #lastModified {
-    color: #f4f765;
+    color: white;
     margin-top: 8px;
     font-size: 1.35rem;
 }
