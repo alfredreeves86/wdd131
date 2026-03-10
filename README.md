@@ -1,2 +1,2 @@
 # wdd131
-Web Development Class
+Web Development Class Weekly Project
