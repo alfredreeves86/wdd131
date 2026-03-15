@@ -1,0 +1,29 @@
+@media (min-width: 800px) {
+    .site-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+    .navigation-list {
+        display: flex;
+        gap: 1.25rem;
+        align-items: center;
+    }
+    .navigation.open .navigation-list {
+        position: static;
+        padding: 0;
+        border-radius: 0;
+        min-width: 0;
+    }
+    .temple-grid {
+        width: min(100% - 2rem, 60rem);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    img {
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }
+}
