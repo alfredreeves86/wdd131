@@ -5,80 +5,98 @@
 }
 body {
     font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    margin: 0;
     background-color: #f5f5f7;
 }
 .site-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.75rem 1rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0.74rem 1.5rem;
     background-color: #1D1D1F;
     color: #fff;
+    position: relative;
 }
 .site-tittle {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
+    line-height: 1.1;
 }
 .menu-button {
     appearance: none;
     border: 0;
     background: transparent;
-    padding: 0.25rem 0.5rem;
-    font-size: 2rem;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    font-size: 2.75rem;
     line-height: 1;
     cursor: pointer;
-}
-.navigation {
-    position: relative;
+    margin-left: auto;
 }
 .navigation-list {
     list-style: none;
+    display: none;
     margin: 0;
     padding: 0;
-    display: none;
 }
 .navigation.open .navigation-list {
     display: grid;
-    gap: 0.5rem;
+    gap: 0.75rem;
     position: absolute;
-    top: calc(100% + 0.75rem);
+    top: 100%;
+    left: 0;
     right: 0;
-    min-width: 12rem;
-    padding: 0.25rem;
+    padding: 0.75rem 1.5rem 1rem;
+    background: #1D1D1F;
 }
 .navigation a {
     display: block;
     padding: 0.25rem 0.5rem;
     color: #fff;
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 .navigation a:focus-visible,
 .navigation a:hover {
     text-decoration: underline;
 }
-main > h1{
+main {
+    width: min(100% - 2rem, 34rem);
+    margin: 0 auto;
+    padding-top: 1.75rem;
+}
+.page-tittle {
+    width: 100%;
     text-align: center;
-    margin: 1.35rem 0 1rem;
+    margin: 0 0 1.75rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 .temple-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    width: min(100% - 2rem, 30rem);
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    width: 100%;
+    margin: 0 0 2.5rem;
+    justify-items: center;
 }
-figure {
+.temple-grid figure {
+    width: 100%;
     margin: 0;
     text-align: center;
 }
-img {
+.temple-grid img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
     display: block;
+    margin-inline: auto;
 }
-figcaption {
-    margin-top: 0.5rem;
+.temple-grid figcaption {
+    margin-top: 0.75rem;
+    color: #1D1D1F;
 }
 .temple-grid img {
     display: block;
@@ -94,7 +112,7 @@ figcaption {
 }
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1.25rem 1rem;
     background-color: #1D1D1F;
     color: #ffff;
 
