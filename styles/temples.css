@@ -73,9 +73,7 @@ nav.navigation {
 }
 /*hover effect on text*/
 .navigation a {
-    padding: 6px 12px;
     border-radius: 20px;
-    text-decoration: none;
     transition: all 0.3s ease;
     }
 
@@ -129,7 +127,6 @@ main {
 .temple-grid figcaption {
     display: inline-block;
     text-decoration: none;
-    color: #000000;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 .temple-grid figcaption:hover {
