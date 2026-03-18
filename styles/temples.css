@@ -41,7 +41,6 @@ nav.navigation {
     padding: 6px 12px;
     border-radius: 20px;
     text-decoration: none;
-    color: #fff;
     transition: all 0.3s ease;
 }
 .menu-button:hover {
@@ -78,7 +77,6 @@ nav.navigation {
     padding: 6px 12px;
     border-radius: 20px;
     text-decoration: none;
-    color: #fff;
     transition: all 0.3s ease;
     }
 
