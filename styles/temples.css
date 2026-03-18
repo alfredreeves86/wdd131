@@ -16,7 +16,7 @@ body {
     color: #fff;
     position: relative;
 }
-.navigation {
+nav.navigation {
     display: flex;
 }
 .site-tittle {
