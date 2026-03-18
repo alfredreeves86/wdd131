@@ -61,7 +61,7 @@ body {
     background: #1D1D1F;
 }
 .navigation a {
-    display: block;
+    display: flex;
     padding: 0.25rem 0.5rem;
     color: #fff;
     text-decoration: none;
