@@ -19,9 +19,6 @@
         margin: 0;
         padding: 0;
     }
-    .navigation a {
-        font-size: 1.25rem;
-    }
     .navigation li {
         list-style: none;
     }
