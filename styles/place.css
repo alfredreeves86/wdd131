@@ -1,0 +1,107 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-header: #dad7cd;
+    --color-accent: #3A5A40;
+    --color-body: #a3b184;
+    --color-footer: #344e41;
+    --font-body: font-family: "Bebas Neue", sans-serif;
+    
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: var(--color-body);
+    font-family: var(--font-body);
+    color: var(--color-black);
+    line-height: 1.5;
+}
+.site-header,
+footer {
+    background-color: var(--color-header);
+    color: var(--color-black);
+    font-family: var(--font-body);
+    text-align: center;
+}
+.site-header {
+    border-bottom: 0.65rem solid var(--color-accent);
+    padding: 1rem 1rem 0.9rem;
+}
+.site-title {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 2rem;
+    font-weight: 800;
+}
+main {
+    width: min(100%, 30rem);
+    margin: 0 auto;
+    background-color: var(--color-header);
+}
+.hero-image picture, .hero-image img {
+    display: block;
+    width: 100%;
+    background-color: var(--color-white);
+}
+.hero-image img {
+    height: auto;
+    object-fit: cover;
+}
+.data-info {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+.data-title,
+.weather-title {
+    margin: 0;
+    padding: 1rem 1rem 0.75rem;
+    text-align: center;
+    font-family: var(--font-body);
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.data-info > .weather-data {
+    border-top: 1px solid var(--color-header);
+}
+.data-table .row,
+.data-info > .weather-data > .row,
+.data-info > .weather-data .weather-data .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data-table,
+.data-info > .weather-data {
+    padding: 0 1rem 1.25rem;
+}
+.data-table .col,
+.data-info > .weather-data .col {
+    margin: 0.15rem 0;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 0.98rem;
+}
+.weather-icon1 {
+    margin: 0.rem 0 1rem;
+}
+.weather-icon1 picture,
+.weather-icon1 img {
+    display: block;
+}
+.weather-icon1 img {
+    width: 72px;
+    height: auto;
+}
+footer {
+    padding: 1rem 0.75rem 1.25rem;
+    font-size: 0.95rem;
+
+}
+footer p {
+    margin: 0.25rem 0;
+}
+#lastModified {
+    font-weight: 600;
+}
