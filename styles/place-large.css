@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    main {
+        width: min(100% - 2rem, 64rem);
+    }
+    .hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+   .weather-icon1 img {
+    width: 96px;
+    height: auto;
+    }
+}

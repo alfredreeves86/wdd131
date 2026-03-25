@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,58 @@
     <title>Country Page</title>
     <link rel="stylesheet" href="styles/place.css">
     <link rel="styles" href="styles/place-large.css">
-    <script src="scripts/place.js"></script>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/place_getWindchill.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
     <header class="site-header">
-        <h1 class="site-tittle">The Kingdom of Tonga</h1>
+        <h1 class="site-title">The Kingdom of Tonga</h1>
     </header>
     <main>
         <div class="hero-image">
-            <img src="images/EuaGB2.webp" alt="Tonga_Hero">
+            <picture>
+                <source srcset="images/VvuGB2.webp" media="(min-width: 768px)">
+                <img src="images/EuaGB2.webp" alt="Tonga_Hero">
+            </picture>
         </div>
-        <div class="data-tittle">
-            
+        <div class="data-info">
+            <h2 class="data-title">Data</h2>
+            <div class="data-table">
+                <div class="row">
+                    <div class="col">Area: 750 sq km</div>
+                    <div class="col">Population: 103,972</div>
+                    <div class="col">Capital: Nuku'alofa</div>
+                    <div class="col">Languages: Tongan</div>
+                    <div class="col">Currency: Tongan Pa'anga(TOP)</div>
+                    <div class="col">Time Zone: GMT+13</div>
+                    <div class="col">Calling Code: +676</div>
+                    <div class="col">Internet TLD: .to</div>
+                </div>
+            </div>
+            <div class="weather-data">
+                <h2 class="weather-title">Weather</h2>
+                <div class="row">
+                    <div class="weather-icon1">
+                        <img src="assets/weather_mob.ico" alt="weather_asset1">
+                    </div>
+                    <div class="weather-data">
+                        <div class="row">
+                            <div class="col">Temperature: 28°C</div>
+                            <div class="col">Conditions: Ligth rain</div>
+                            <div class="col">Wind: 34 km/h</div>
+                            <div class="col">Wind Chill: <span id="windchill"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
     <footer>
         <p id="copyright"></p>
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>
