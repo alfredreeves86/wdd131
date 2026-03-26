@@ -1,4 +1,9 @@
 @media (min-width: 768px) {
+    :root {
+        --info-font-size: 1.1rem;
+        --info-line-height: 1.5;
+        --info-font-weight: 800;
+    }
     main {
         position: relative;
         width: 100%;
@@ -53,13 +58,14 @@
         background-color: rgba(237, 232, 232, 0.614);
         box-shadow: 0 10px 28px rgb(0, 0, 0.16);
         backdrop-filter: blur(3px);
-        color: black;
     }
     .data-table .row {
         align-items: center;
     }
-    .data-table.col {
-        font-size: 1rem;
+    .data-table .col,
+    .data-info>.weather-data .col {
+        color: var(--color-black);
+        font-weight: var(--info-font-weight);
     }
     .data-info > .weather-data {
         position: absolute;
@@ -106,12 +112,9 @@
     .data-info > .weather-data .weather-data .row {
         align-items: center;
     }
-    .data-info > .weather-data .col {
-        font-size: 1rem;
-    }
     footer {
         padding: 1.5rem 1rem 1.75rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
 }

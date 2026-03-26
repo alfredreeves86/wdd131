@@ -5,7 +5,10 @@
     --color-accent: #3A5A40;
     --color-body: #a3b184;
     --color-footer: #344e41;
-    --font-body: font-family: "Bebas Neue", sans-serif;
+    --font-body: "Alumni Sans Pinstripe", sans-serif;
+    --font-title: "Red Hat Display", sans-serif;
+    --info-font-size: 1.2rem;
+    --info-line-height: 1.45;
     
 }
 * {
@@ -31,7 +34,7 @@ footer {
 }
 .site-title {
     margin: 0;
-    font-family: var(--font-body);
+    font-family: var(--font-title);
     font-size: 2rem;
     font-weight: 800;
 }
@@ -58,7 +61,7 @@ main {
     margin: 0;
     padding: 1rem 1rem 0.75rem;
     text-align: center;
-    font-family: var(--font-body);
+    font-family: var(--font-title);
     font-size: 1.9rem;
     font-weight: 700;
 }
@@ -81,7 +84,8 @@ main {
     margin: 0.15rem 0;
     text-align: center;
     color: var(--color-white);
-    font-size: 0.98rem;
+    font-size: var(--info-font-size);
+    line-height: var(--infoline-height);
 }
 .weather-icon1 {
     margin: 0.rem 0 1rem;
@@ -101,6 +105,7 @@ footer {
 }
 footer p {
     margin: 0.25rem 0;
+    font-size: 1.2rem;
 }
 #lastModified {
     font-weight: 600;
