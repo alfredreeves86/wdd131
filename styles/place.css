@@ -89,9 +89,6 @@ main {
     font-size: var(--info-font-size);
     line-height: var(--infoline-height);
 }
-.weather-icon1 {
-    margin: 0.rem 0 1rem;
-}
 .weather-icon1 picture,
 .weather-icon1 img {
     display: block;

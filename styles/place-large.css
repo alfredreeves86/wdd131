@@ -15,7 +15,7 @@
         padding: 2rem 1rem 1.5rem;
     }
     .site-title {
-        font-size: clamp(2.8rem 5vw, 4rem);
+        font-size: clamp(2.8rem);
     }
     .hero-image {
         position: relative;
