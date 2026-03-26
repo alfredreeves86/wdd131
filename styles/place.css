@@ -11,7 +11,9 @@
     --info-line-height: 1.45;
     
 }
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 body {
