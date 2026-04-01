@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #edbf9b;
+}
+.site-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0.74rem 1.5rem;
+    background-color: #3c4044;
+    color: #fff;
+    position: relative;
+}
+nav.navigation {
+    display: flex;
+}
+.site-tittle {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+}
+.menu-button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    font-size: 2.75rem;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: auto;
+}
+.menu-button {
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.menu-button:hover {
+    background-color: gray;
+}
+.navigation-list {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation.open .navigation-list {
+    display: grid;
+    gap: 0.75rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0.75rem 1.5rem 1rem;
+    background: #1D1D1F;
+}
+.navigation a {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*hover effect on text*/
+.navigation a {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    }
+
+.navigation a:hover {
+    background:#fd7b41;
+}
+main {
+    width: min(100% - 2rem, 34rem);
+    margin: 0 auto;
+    padding-top: 1.75rem;
+}
+.page-tittle {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1.75rem;
+    font-size: 2rem;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+.temple-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    width: 100%;
+    margin: 0 0 2.5rem;
+    justify-items: center;
+}
+.temple-grid figure {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.temple-grid img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
+    margin-inline: auto;
+    border-radius: 14px;
+    
+}
+.temple-grid figcaption {
+    margin-top: 0.80rem;
+    color: #1D1D1F;
+    font-family: "Crimson Text", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/*hover effect*/
+.temple-grid figcaption {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.temple-grid figcaption:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+.temple-grid img:hover {
+    filter: brightness(1.05) contrast(1.05);
+}
+footer {
+    text-align: center;
+    padding: 1.25rem 1rem;
+    background-color: #3c4044;
+    color: #fff;
+
+}
+footer p {
+    margin: 0.25rem;
+    font-size: 0.95rem;
+}
+#last-modified {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}

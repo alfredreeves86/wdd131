@@ -1,0 +1,55 @@
+@media (min-width: 768px) {
+    main {
+        width: min(100% - 2rem, 64rem);
+    }
+    .site-header {
+        justify-content: space-between;
+    }
+    .menu-button {
+        display: none;
+    }
+    .navigation-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.25rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navigation li {
+        list-style: none;
+    }
+    .navigation.open .navigation-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 1.25rem;
+        align-items: center;
+        position: static;
+        padding: 0;
+    }
+    .page-title {
+        width: 100%;
+        text-align: center;
+    }
+        /*activate image hover effect*/
+        .temple-grid img {
+            display: block;
+            transition: transform 200ms ease, box-shadow 200ms ease;
+            will-change: transform;
+        }
+    
+        .temple-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 25);
+        }
+    
+        .temple-grid img:hover {
+            filter: brightness(1.05) contrast(1.05);
+        }
+}
+
