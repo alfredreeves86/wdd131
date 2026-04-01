@@ -36,8 +36,6 @@ nav.navigation {
     line-height: 1;
     cursor: pointer;
     margin-left: auto;
-}
-.menu-button {
     border-radius: 20px;
     text-decoration: none;
     transition: all 0.3s ease;
