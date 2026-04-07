@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alfred Kamisese">
+    <meta name="description" content="A pastry-inspired home baking site featuring step-by-step dessert recipes, technique guides, and practical tips, with 
+    properly credited licensed images.">
+    <link rel="icon" href="assets/whisk-svgrepo-com.svg">
+    <title>Home Baking & Dessert Creations</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="brand">
+            <a href="siteplan.html" class="brand-link">Home Baking & Dessert Creations</a>
+            <div class="brand subtitle">Pastry-style recipes, step-by-step technique, and precision tips.</div>
+        </div>
+
+        <nav class="nav" aria-label="Main">
+            <a class="nav-link" href="siteplan.html" aria-current="page">Home</a>
+            <a class="nav-link" href="recipes.html">Recipes</a>
+            <a class="nav-link" href="guides.html">Guides & Tips</a>
+            <a class="nav-link" href="#credits">Credits</a>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+    <section class="hero">
+        <div class="conatainer hero-inner">
+            <div class="hero-copy">
+                <p class="eye-brow">Precision bakes, cozy results.</p>
+                <h1>Home Baking & Dessert Creations</h1>
+                <p class="lead">A pastry-inspired recipe collection with clear steps, technique notes, and troubleshooting tips</p>
+            </div>
+
+            <div class="button-row">
+                <a class="btn-primary" href="recipes.html">Browse Recipes</a>
+                <a class="btn-secondary" href="guides.html">Technique Guides</a>
+            </div>
+            <ul class="meta-list">
+                <li><span class="meta-label">Focus:</span> reliable classics, pastry fundamentals</li>
+                <li><span class="meta-label">Format:</span> step-by-step, time + difficulty, tips</li>
+            </ul>
+        </div>
+        <div class="hero-media">
+            <img src="images/hero-image.jpg" alt="pastry workspace" class="hero-image" />
+        
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Recipes</h2>
+                <p class="muted">Three polished bakes to start with.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <img src="images/chocolate_chipcookie.jpg" alt="Brown butter chocolate chip cookies" class="card-img"/>
+                    <div class="card-body">
+                        <h3 class="card-title">Brown Butter Chocolate Chip Cookies</h3>
+                        <p class="card-meta"><span class="pill">45 min</span> <span class="pill">Medium</span></p>
+                        <p class="card-text">Deep caramel notes, crisp edges, soft center.</p>
+                        <a class="card-link" href="recipes.html#recipe-brown-butter">Open recipe</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/chocolate_tart.jpg" alt="Chocolate ganches tart" class="card-body">
+                    <div class="card-body">
+                        <h3 class="card-title">Chocolate Ganache Tart</h3>
+                        <p class="card-meta"><span class="pill">60 min + chill</span><span class="pill">Medium</span></p>
+                        <p class="card-text">Silky ganache set ina a crisp tart shell.</p>
+                        <a class="card-link" href="recipes.html#recipe-ganche-tart">Open recipe</a>                
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/french_crepes.jpg" alt="French Crepes" class="card-img" />
+                    <div class="card-body">
+                        <h3 class="card-title">French Crepes</h3>
+                        <p class="card-meta"><span class="pill">30 min</span><span class="pill">Easy</span></p>
+                        <p class="card-text">Thin, tender crepes with a smooth batter method</p>
+                        <a class="card-link" href="recipes.html#recipe-crepes">Open recipe</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alt">
+        <div class="container">
+           <div class="section-header">
+            <h2>Technique Spotlight</h2>
+            <p class="muted">Small details that make bakes look and taste professional.</p>
+           </div> 
+
+           <div class="spotlight-grid">
+            <div class="spotlight">
+                <h3>Brown butter cues</h3>
+                <p>Watch for abmer color and toasted milk solids. Cool before mixing to prevent greasy dough.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Crepe batter rest</h3>
+                <p>Resting reduces bubbles and improves texture. Strain for a smoother pour.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Ganache ratios</h3>
+                <p>More cream equals softer set. For tart filling, a 1:1 ratio is a strong starting point.</p>
+            </div>
+           </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p id="copyright"></p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
