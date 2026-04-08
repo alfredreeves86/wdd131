@@ -9,9 +9,23 @@
     <link rel="icon" href="assets/whisk-svgrepo-com.svg">
     <title>Home Baking & Dessert Creations</title>
     <link rel="stylesheet" href="styles/siteplan.css">
+    ,<link rel="stylesheet" href="styles/siteplan-large.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
     <div class="container header-inner">
         <div class="brand">
@@ -30,26 +44,64 @@
 
 <main id="main">
     <section class="hero">
-        <div class="conatainer hero-inner">
+        <div class="container hero-inner">
             <div class="hero-copy">
-                <p class="eye-brow">Precision bakes, cozy results.</p>
+                <p class="eyebrow">Precision bakes, cozy results.</p>
                 <h1>Home Baking & Dessert Creations</h1>
                 <p class="lead">A pastry-inspired recipe collection with clear steps, technique notes, and troubleshooting tips</p>
-            </div>
 
             <div class="button-row">
-                <a class="btn-primary" href="recipes.html">Browse Recipes</a>
-                <a class="btn-secondary" href="guides.html">Technique Guides</a>
+                <a class="btn btn-primary" href="recipes.html">Browse Recipes</a>
+                <a class="btn btn-secondary" href="guides.html">Technique Guides</a>
             </div>
             <ul class="meta-list">
                 <li><span class="meta-label">Focus:</span> reliable classics, pastry fundamentals</li>
                 <li><span class="meta-label">Format:</span> step-by-step, time + difficulty, tips</li>
+                <div>
+                    <span class="scenarios">Scenario</span>
+                    <ul>
+                        <li>I'm new to baking. What should I start with?</li>
+                        <li>Does your recipes use cups or grams?</li>
+                        <li>My frosting/ganache looks grainy. Can I fix it?</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="color-schema">Color Schema</span>
+                    <ul>
+                        <li>Background: #faf7f2 - Off-white</li>
+                        <li>Surface: #ffffff - White</li>
+                        <li>Text: #1f1f1f - Very dark-gray (mostly black)</li>
+                        <li>Muted: #5d5d5d - Very dark-gray</li>
+                        <li>Border, Accent: #c8a44d - Moderate orage</li>
+                        <li>Accent 2: #6b2d3a - Very dark desaturated red</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="typography">Typography</span>
+                    <ul>
+                        <li>Body: Font Family - Source San 3 - san, serif</li>
+                        <li>Headings: Font Family - Cormorant, serif</li>
+                    </ul>
+                </div>
             </ul>
         </div>
         <div class="hero-media">
             <img src="images/hero-image.jpg" alt="pastry workspace" class="hero-image" />
+            <p class="caption">Image/photo by: Israel Guerrero Santacruz.
+            Aug 26, 2012. Source: Pexels.</p>
         
         </div>
+
+                        <div>
+                            <span class="wireframe">Wireframes</span>
+                            <ul>
+                                <p>Mobile View</p>
+                                <img src="assets/Mobile_Smallview.webp" alt="mobile-view" class="small-view" />
+                                <p>Large View</p>
+                                <img src="assets/Desktop_Largeview.webp" alt="desktop-view" class="large-view" />
+                            </ul>
+                        </div>
+
     </section>
 
     <section class="section">
@@ -71,7 +123,7 @@
                 </article>
 
                 <article class="card">
-                    <img src="images/chocolate_tart.jpg" alt="Chocolate ganches tart" class="card-body">
+                    <img src="images/chocolate_tart.jpg" alt="Chocolate ganches tart" class="card-img">
                     <div class="card-body">
                         <h3 class="card-title">Chocolate Ganache Tart</h3>
                         <p class="card-meta"><span class="pill">60 min + chill</span><span class="pill">Medium</span></p>
@@ -106,7 +158,7 @@
                 <p>Watch for abmer color and toasted milk solids. Cool before mixing to prevent greasy dough.</p>
             </div>
             <div class="spotlight">
-                <h3>Crepe batter rest</h3>
+                <h3>Crepes batter rest</h3>
                 <p>Resting reduces bubbles and improves texture. Strain for a smoother pour.</p>
             </div>
             <div class="spotlight">
