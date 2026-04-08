@@ -186,7 +186,7 @@ h3 {
 .caption {
     color: var(--muted);
     font-size: 0.85rem;
-    margin-top: 0.5;
+    margin-top: 0.5px;
     font-style: italic;
 }
 
@@ -361,7 +361,6 @@ footer {
     text-align: center;
     font-size: 1.35rem;
     font-weight: 700;
-    padding: auto;
 }
 
 
