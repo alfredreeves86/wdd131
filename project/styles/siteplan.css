@@ -161,6 +161,7 @@ h3 {
     font-weight: 600;
 }
 /* Remove after siteplan is submit*/
+.sitepurpose,
 .scenarios,
 .color-schema,
 .typography,
@@ -275,7 +276,7 @@ h3 {
     border-radius: var(--radius);
     padding: 1rem;
 }
-
+    /*--rethink of inserting table in final project or not--*/
 .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -356,7 +357,7 @@ th {
 
 footer {
     background-color: var(--accent);
-    color: var(--text);
+    color: white;
     text-align: center;
     font-size: 1.35rem;
     font-weight: 700;
@@ -364,6 +365,3 @@ footer {
 }
 
 
-footer p {
-    
-}
