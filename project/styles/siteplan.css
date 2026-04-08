@@ -113,7 +113,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+footer p {
     font-family: "Cormorant", serif;
     line-height: 1.2;
     margin: 0.25rem 0 0.75rem;
