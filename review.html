@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD131 Product Review Confirmation Page">
+    <meta name="author" content="Alfred R. Kamisese">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+</head>
+<body>
+    <header class="site-header">
+        <h1>Review Submitted</h1>
+    </header>
+
+    <main class="page-content">
+        <!--confirmation card after form submits to review.html-->
+        <section class="review-summary">
+            <h2>Thanks for your review</h2>
+            <p>You submitted a review for <span id="selectedProduct">your selected product</span>.</p>
+            <p>Total reviews completed: <span id="reviewCount">0</span></p>
+            <a href="form.html" class="return-link">Submit another review</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy;<span id="currentyear"></span>Alfred R. Kamisese</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

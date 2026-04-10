@@ -1,3 +1,10 @@
-const year = new Date().getFullYear();
-document.getElementById("copyright").textContent = `© ${year} 🌴Alfred Kamisese🌴Tonga`;
-document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+const currentYear = document.getElementById("currentyear");
+const lastModified = document.getElementById("lastModified");
+
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
+
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}

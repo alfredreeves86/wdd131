@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD131- Web Form for Products Review">
+    <meta name="author" content="Alfred R. Kamisese">
+    <title>Product Review Form| Alfred Kamisese|</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <script src="scripts/form.js" defer></script>
+    
+</head>
+<body>
+    <header class="site-header">
+        <h1>Product Review</h1>
+    </header>
+    
+    <main class="page-content">
+        <!--method "get"works well in Github Pages as form data append URL-->
+        <form method="get" action="review.html" class="review-form">
+            <!--Product field label-->
+            <div class="form-group">
+                <label for="productId">Product Name</label>
+                <!--required use to prevents submission until chose(notes)-->
+                <select id="productId" name="productId" required>
+                    <!--disable and stops user from choosing selection but runs from js file-->
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <!--fieldset for overall rating grouping-->
+            <fieldset class="form-group rating-group">
+                <legend>Overall Rating</legend>
+                <div class="rating-options">
+                    
+                    <label for="rating1" class="rating-option">
+                        <!--Radios for one choice group from user-->
+                        <input type="radio" id="rating1" name="overallRating" value="1" required>
+                        <span>1</span>
+                    </label>
+                    <!--copy and paste all radio type according to rating number and value number adjustment-->
+                    <label for="rating2" class="rating-option">
+                        <input type="radio" id="rating2" name="overallRating" value="2" required>
+                        <span>2</span>
+                    </label>
+                    <label for="rating3" class="rating-option">
+                        <input type="radio" id="rating3" name="overallRating" value="3" required>
+                        <span>3</span>
+                    </label>
+                    <label for="rating4" class="rating-option">
+                        <input type="radio" id="rating4" name="overallRating" value="4" required>
+                        <span>4</span>
+                    </label>
+                    <label for="rating5" class="rating-option">
+                        <input type="radio" id="rating5" name="overallRating" value="5" required>
+                        <span>5</span>
+                    </label>
+                </div>
+                <!--Using first and last rating choice for (worse-best)-->
+                <div class="rating-scale-labels" aria-hidden="true">
+                <span>Worst</span>
+                <span>Best</span>
+                </div>
+            </fieldset>
+
+            <!--using type "date" makes browser's a calendar/date picker-->
+            <div class="form-group">
+                <label for="installationDate">Date of Installation</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+
+            <!--Checkboxes (notes) multiple values can be selected-->
+            <fieldset class="form-group feature-group">
+                <legend>Which features did you find useful in the product?<span>(Check all that apply)</span></legend>
+                <label for="durability" class="checkbox-option">
+                    <input type="checkbox" id="durability" name="usefulFeatures" value="Durability">
+                    <span>Durability</span>
+                </label>
+                <label for="easOfUse" class="checkbox-option">
+                    <input type="checkbox" id="easOfUse" name="usefulFeatures" value="Ease of Use">
+                    <span>Ease of Use</span>
+                </label>
+                <label for="performance" class="checkbox-option">
+                    <input type="checkbox" id="performance" name="usefulFeatures" value="Performance">
+                    <span>Performance</span>
+                </label>
+                <label for="design" class="checkbox-option">
+                    <input type="checkbox" id="design" name="usefulFeatures" value="design">
+                    <span>Design</span>
+                </label>
+            </fieldset>
+
+            <!--textarea for attribute not required and optional-->
+            <div class="form-group">
+                <label for="writtenReview">Written Review <span>(Optional)</span></label>
+                <textarea id="writtenReview" name="writtenReview" placeholder="What do you think of this product?" rows="5"></textarea>
+            </div>
+            <!--Optional text input also not required-->
+            <div class="form-group">
+                <label for="userName">Your Name <span>(Optional)</span></label>
+                <textarea id="userName" name="userName" placeholder="Jane Doe" rows="1"></textarea>
+            </div>
+
+            <!--Submit/Post sends data to review.html for action-->
+            <input type="submit" value="Post Review" class="submit-button">
+        </form>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy;<span id="currentyear"></span>Alfred R. Kamisese</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
