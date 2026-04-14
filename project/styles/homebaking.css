@@ -3,7 +3,7 @@
     --surface: #ffffff; /*white*/
     --text: #1f1f1f; /*very dark-gray (mostly black*/
     --muted: #5d5d5d;  /*very dark-gray*/
-    --border: #c8a44d; /*Moderate orange*/
+    --border: #e7dfd2; /*Moderate orange*/
     --accent: #c8a44d; /*Moderate orange*/
     --accent-2: #6b2d3a; /*very dark desaturated red*/
 
@@ -21,7 +21,7 @@ body {
     font-family: "Source Sans 3", sans-serif;
     color: var(--text);
     background: var(--bg);
-    line-height: 1.55;;
+    line-height: 1.55;
 }
 
 .container {
@@ -105,7 +105,7 @@ body {
 
 .eyebrow {
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.15em;
     font-size: 0.78rem;
     color: var(--accent-2);
     margin: 0 0 0.5rem;
@@ -160,22 +160,7 @@ h3 {
     color: var(--text);
     font-weight: 600;
 }
-/* Remove after siteplan is submit*/
-.sitepurpose,
-.scenarios,
-.color-schema,
-.typography,
-.wireframe {
-    color: var(--text);
-    font-weight: 600;
-}
 
-.small-view,
-.large-view {
-    width: 100%;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-}
 .hero-image {
     width: 100%;
     border-radius: var(--radius);
@@ -186,12 +171,12 @@ h3 {
 .caption {
     color: var(--muted);
     font-size: 0.85rem;
-    margin-top: 0.5px;
+    margin-top: 0.5rem;
     font-style: italic;
 }
 
 .section {
-    padding: 2rem 0;
+    padding: 2rem 0 4rem;
 }
 
 .section.alt {
@@ -225,7 +210,7 @@ h3 {
 
 .card-img {
     width: 100%;
-    height: 109px;
+    height: 190px;
     object-fit: cover;
     display: block;
 }
@@ -276,7 +261,7 @@ h3 {
     border-radius: var(--radius);
     padding: 1rem;
 }
-    /*--rethink of inserting table in final project or not--*/
+
 .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -350,15 +335,37 @@ th {
 }
 
 .site-footer {
-    border-top: 1px solid var(--border);
+    border-top: 2px solid var(--border);
     background: var(--accent);
     padding: 1.5rem 0;
+    margin-top: 3rem;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
 
 }
 
+@media (max-width: 900px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .card-img {
+        height: 220px;
+    }
+}
 
 

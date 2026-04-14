@@ -8,10 +8,8 @@
     properly credited licensed images.">
     <link rel="icon" href="assets/whisk-svgrepo-com.svg">
     <title>Home Baking & Dessert Creations</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <link rel="stylesheet" href="styles/siteplan-large.css">
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/siteplan.js" defer></script>
+    <link rel="stylesheet" href="styles/homebaking.css">
+    <script src="scripts/homebaking.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
@@ -29,7 +27,7 @@
 <header class="site-header">
     <div class="container header-inner">
         <div class="brand">
-            <a href="siteplan.html" class="brand-link">Home Baking & Dessert Creations</a>
+            <a href="homebaking.html" class="brand-link">Home Baking &amp; Dessert Creations</a>
             <div class="brand subtitle">Pastry-style recipes, step-by-step technique, and precision tips.</div>
         </div>
 
@@ -58,58 +56,14 @@
                 <li><span class="meta-label">Focus:</span> reliable classics, pastry fundamentals</li>
                 <li><span class="meta-label">Format:</span> step-by-step, time + difficulty, tips</li>
             </ul>
-                <div>
-                    <span class="sitepurpose">Site Purpose</span>
-                    <ul>
-                        <li>The purpose of this site is to teach home bakers how to create dessert and party-style recipes
-                            with confidence by providing clear step-by-step instructions, technique guides, and 
-                            practical baking tips.
-                        </li>
-                    </ul>
-                </div>
-                    <span class="scenarios">Scenarios</span>
-                    <ul>
-                        <li>I'm new to baking. What should I start with?</li>
-                        <li>Does your recipes use cups or grams?</li>
-                        <li>My frosting/ganache looks grainy. Can I fix it?</li>
-                    </ul>
-                    <span class="color-schema">Color Schema</span>
-                    <ul>
-                        <li>Background: #faf7f2 - Off-white</li>
-                        <li>Surface: #ffffff - White</li>
-                        <li>Text: #1f1f1f - Very dark-gray (mostly black)</li>
-                        <li>Muted: #5d5d5d - Very dark-gray</li>
-                        <li>Border, Accent: #c8a44d - Moderate orage</li>
-                        <li>Accent 2: #6b2d3a - Very dark desaturated red</li>
-                    </ul>
-                    <span class="typography">Typography</span>
-                    <ul>
-                        <li>Body: Font Family - Source San 3 - san, serif</li>
-                        <li>Headings, Footer: Font Family - Cormorant, serif</li>
-                    </ul>
-            
-        </div>
+        </div>   
         <div class="hero-media">
             <img src="images/hero-image.jpg" alt="pastry workspace" class="hero-image">
             <p class="caption">Image/photo by: Israel Guerrero Santacruz.
-            Aug 26, 2012. Source: Pexels.</p>
-        
+                        Aug 26, 2012. Source: Pexels.</p>
+                
         </div>
-
-                        <div>
-                            <span class="wireframe">Wireframes</span>
-                            <ul>
-                                <li>
-                                <p>Mobile View</p>
-                                <img src="assets/mobile_smallview.png" alt="mobile-view" class="small-view" >
-                                </li>
-                                <li>
-                                <p>Large View</p>
-                                <img src="assets/desktop_largeview.png" alt="desktop-view" class="large-view" >
-                                </li>
-                            </ul>
-                        </div>
-        </div>               
+        </div>   
     </section>
 
     <section class="section">
@@ -135,7 +89,7 @@
                     <div class="card-body">
                         <h3 class="card-title">Chocolate Ganache Tart</h3>
                         <p class="card-meta"><span class="pill">60 min + chill</span><span class="pill">Medium</span></p>
-                        <p class="card-text">Silky ganache set ina a crisp tart shell.</p>
+                        <p class="card-text">Silky ganache set in a crisp tart shell.</p>
                         <a class="card-link" href="recipes.html#recipe-ganche-tart">Open recipe</a>                
                     </div>
                 </article>
@@ -177,9 +131,14 @@
         </div>
     </section>
 </main>
-<footer>
-    <p id="copyright"></p>
-    <p id="lastModified"></p>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+    <p>&copy;<span id="currenyear"></span>|Alfred R. Kamisese|Tonga</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
 </footer>
+
 </body>
+
 </html>
