@@ -87,6 +87,13 @@ body {
     border: 1px solid transparent;
 }
 
+.nav-link:hover {
+    opacity: 5;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: #e3d5ca;
+}
+
 .nav-link[aria-current="page"]{
     border-color: var(--border);
     background: var(--surface);
