@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alfred Kamisese">
+    <meta name="description" content="Review the submitted feedback for Home Baking &amp; Dessert Creations.">
+    <link rel="icon" href="assets/whisk-svgrepo-com.svg">
+    <title>Review Submitted | Home Baking &amp; Dessert Creations</title>
+    <link rel="stylesheet" href="styles/homebaking.css">
+    <script src="scripts/homebaking.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html" class="brand-link">Home Baking &amp; Dessert Creations</a>
+                <div class="brand-subtitle">Feedback Submitted</div>
+            </div>
+    
+            <nav class="nav" aria-label="Main">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="recipes.html">Recipes</a>
+                <a class="nav-link" href="guides.html">Guides &amp; Tips</a>
+                <a class="nav-link" href="feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="review-page section">
+        <!--review summary for user to confirm result been submitted-->
+        <div class="container review-layout" data-review-summary>
+            <section class="review-intro panel">
+                <p class="eyebrow">Submission Complete</p>
+                <h1>Thanks for sharing your baking feedback</h1>
+                <p class="lead">
+                    Your notes helps improve the recipe pages and make our baking guides more useful for future visitors.
+                </p>
+
+                <div class="feedback-highlights" aria-label="Submission highlights">
+                    <div class="feedback-highlight">
+                        <span class="highlight-label">Recipe</span>
+                        <strong id="recipeName">Selected recipe</strong>
+                    </div>
+                    <div class="feedback-highlight">
+                        <span class="highlight-label">Saved Count</span>
+                        <strong id="feedbackCount">0</strong>
+                    </div>
+                    <div class="feedback-highlight">
+                        <span class="highlight-label">Status</span>
+                        <strong>Stored Locally</strong>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <a href="feedback.html" class="btn btn-primary">Submit Another Review</a>
+                    <a href="recipes.html" class="btn btn-secondary">Browse Recipes</a>
+                </div>
+            </section>
+
+            <!--notify empty spaces when no data is submitted-->
+            <!--show user summary input after sumbitted-->
+            <section class="review-card panel">
+                <div class="section-header">
+                    <h2>Your Submitted Review</h2>
+                    <p class="muted">This page reads the values from the submitted form and displays</p>
+                </div>
+
+                <div id="reviewEmptyState" class="review-empty" hidden>
+                    <h3>No submitted feedback found yet.</h3>
+                    <p>Open the feedback form, submit your review, and this page will show the results here.</p>
+                    <a href="feedback.html" class="btn btn-primary">Go To Feedback Form</a>
+                </div>
+
+                <div id="reviewContent" class="review-details" hidden>
+                    <div class="review-detail">
+                        <span class="review-label">Recipe</span>
+                        <strong id="submittedRecipe">Selected recipe</strong>
+                    </div>
+
+                    <div class="review-detail">
+                        <span class="review-label">Tried the guides</span>
+                        <strong id="triedGuidesValue">Not provided</strong>
+                    </div>
+
+                    <div class="review-detail">
+                        <span class="review-label">Presentation rating</span>
+                        <strong id="presentationStars" class="review-stars">Not provided</strong>
+                    </div>
+
+                    <div class="review-detail">
+                        <span class="review-label">Ease of instructions</span>
+                        <strong id="easyRatingValue">Not provided</strong>
+                    </div>
+
+                    <div class="review-detail">
+                        <span class="review-label">Recommend to others</span>
+                        <strong id="recommendValue">Not provided</strong>
+                    </div>
+
+                    <div class="review-detail review-detail-full">
+                        <span class="review-label">What the user liked most</span>
+                        <p id="writtenReviewValue" class="review-note">No written review was added.</p>
+                    </div>
+
+                    <div class="review-detail review-detail-full">
+                        <span class="review-label">Email</span>
+                        <p id="emailValue" class="review-note">No email provided.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy;<span id="currenyear"></span> | Alfred R. Kamisese | Tonga</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

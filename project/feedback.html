@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alfred Kamisese">
+    <meta name="description" content="Share feedback about recipes and baking guides from Home Baking &amp; Dessert Creations.">
+    <link rel="icon" href="assets/whisk-svgrepo-com.svg">
+    <title>Feedback | Home Baking &amp; Dessert Creations</title>
+    <link rel="stylesheet" href="styles/homebaking.css">
+    <script src="scripts/homebaking.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="homebaking.html" class="brand-link">Home Baking &amp; Dessert Creations</a>
+                <div class="brand-subtitle">Feedback Review</div>
+            </div>
+
+            <nav class="nav" aria-label="Main">
+                <a class="nav-link" href="homebaking.html">Home</a>
+                <a class="nav-link" href="recipes.html">Recipes</a>
+                <a class="nav-link" href="guides.html">Guides &amp; Tips</a>
+                <a class="nav-link" href="feedback.html" aria-current="page">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="feedback-page section">
+        <div class="container feedback-layout">
+
+            <!--Guidance section-->
+            <section class="feedback-intro panel" aria-labelledby="feedback-title">
+                <p class="eyebrow">Share Your Bake With Us</p>
+                <h1 id="feedback-title">Recipe Feedback</h1>
+                <p class="lead">
+                    Tell us what worked, what felt tricky, and which recipe helped you bake confidence in the kitchen.
+                </p>
+
+                <!--Helping user with ease accesibility-->
+                <div class="feedback-highlights" aria-label="Feedback overview">
+                    <div class="feedback-highlight">
+                        <span class="highlight-label">Time</span>
+                        <strong>2 minutes</strong>
+                    </div>
+                    <div class="feedback-highlight">
+                        <span class="highlight-label">Focus</span>
+                        <strong>Recipe clarity</strong>
+                    </div>
+                    <div class="feedback-highlight">
+                        <span class="highlight-label">Bonus</span>
+                        <strong>Helpful baking notes</strong>
+                    </div>
+                </div>
+
+                <ul class="meta-list">
+                    <li><span class="meta-label">Choose</span> the recipe you baked.</li>
+                    <li><span class="meta-label">Rate</span> how easy the instruction were to follow.</li>
+                    <li><span class="meta-label">Describe</span> what you liked most about the result.</li>
+                </ul>
+            </section>
+
+            <!--Form field for user-->
+            <form method="get" action="review.html" class="review-form" aria-labelledby="feedback-form-title">
+                <div class="form-card">
+                    <div class="form-card-header">
+                        <h2 id="feedback-form-title">Feedback Form</h2>
+                        <p class="muted">Fields marked with * are required.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recipeId">Which recipe are you providing feedback on? *</label>
+                        <!--prevent submission until chose-->
+                        <select id="recipeId" name="recipeId" required>
+                            <!--run option from js file-->
+                            <option value="" disabled selected>Select recipe....</option>
+                        </select>
+                    </div>
+                    <!--fieldset for yes/no choice-->
+                    <fieldset class="form-group">
+                        <legend>Did you try the suggested recipe steps &amp; guides? *</legend>
+                        <div class="choice-row">
+                            <label class="choice-chip" for="guides-yes">
+                                <input type="radio" id="guides-yes" name="tried-guides" value="yes" required>
+                                <span>Yes</span>
+                            </label>
+                            <label class="choice-chip" for="guides-no">
+                                <input type="radio" id="guides-no" name="tried-guides" value="no" required>
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!--fieldset for star rating for overall recipe instructions-->
+                    <fieldset class="form-group star-rating-group">
+                        <legend>How would you rate the overall recipe instructions? *</legend>
+                        <div class="star-rating" aria-label="Presentation rating">
+                            <input type="radio" id="presentation-rating-5" name="presentation-rating" value="5" required>
+                            <label for="presentation-rating-5" aria-label="5 stars">
+                                <span aria-hidden="true">&#9733;</span>
+                            </label>
+                            <!--copy 4x times-->
+                            <input type="radio" id="presentation-rating-4" name="presentation-rating" value="4">
+                            <label for="presentation-rating-4" aria-label="4 stars">
+                                <span aria-hidden="true">&#9733;</span>
+                            </label>
+
+                            <input type="radio" id="presentation-rating-3" name="presentation-rating" value="3">
+                            <label for="presentation-rating-3" aria-label="3 stars">
+                                <span aria-hidden="true">&#9733;</span>
+                            </label>
+
+                            <input type="radio" id="presentation-rating-2" name="presentation-rating" value="2">
+                            <label for="presentation-rating-2" aria-label="2 stars">
+                                <span aria-hidden="true">&#9733;</span>
+                            </label>
+
+                            <input type="radio" id="presentation-rating-1" name="presentation-rating" value="1">
+                            <label for="presentation-rating-1" aria-label="1 star">
+                                <span aria-hidden="true">&#9733;</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group rating-group">
+                        <legend>How easy was it to follow the recipe instructions? *</legend>
+                        <div class="rating-options">
+                            <label for="rating1" class="rating-option">
+                                <input type="radio" id="rating1" name="easyRating" value="1" required>
+                                <span>1</span>
+                            </label>
+                            <!--copy&paste 4x value-->
+                            <label for="rating2" class="rating-option">
+                                <input type="radio" id="rating2" name="easyRating" value="2" required>
+                                <span>2</span>
+                            </label>
+
+                            <label for="rating3" class="rating-option">
+                                <input type="radio" id="rating3" name="easyRating" value="3" required>
+                                <span>3</span>
+                            </label>
+
+                            <label for="rating4" class="rating-option">
+                                <input type="radio" id="rating4" name="easyRating" value="4" required>
+                                <span>4</span>
+                            </label>
+
+                            <label for="rating5" class="rating-option">
+                                <input type="radio" id="rating5" name="easyRating" value="5" required>
+                                <span>5</span>
+                            </label>
+                        </div>
+                        <div class="rating-scale" aria-hidden="true"
+                            <span>Very Diffucult</span>
+                            <span>Easy</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend>Would you recommend this recipe to others? *</legend>
+                        <div class="choice-row">
+                            <label class="choice-chip" for="recommend-yes">
+                                <input type="radio" id="recommend-yes" name="recommend" value="yes" required>
+                                <span>Yes</span>
+                            </label>
+                            <label class="choice-chip" for="recommend-maybe">
+                                <input type="radio" id="recommend-maybe" name="recommend" value="maybe" required>
+                                <span>Maybe</span>
+                            </label>
+                            <label class="choice-chip" for="recommend-no">
+                                <input type="radio" id="reommend-no" name="recommend" value="no" required>
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="writtenReview">What did you like most about this recipe?
+                            <span class="optional-note">(Optional)</span>
+                        </label>
+                        <textarea name="writtenReview" id="writtenReview" rows="5" placeholder="The cheesecake was so easy to make..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Your Email *</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="example@gmail.com">
+                    </div>
+
+                    <input type="submit" value="Submit Feedback" class="submit-button">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy;<span id="currenyear"></span>| Alfred R. Kamisese | Tonga |</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
