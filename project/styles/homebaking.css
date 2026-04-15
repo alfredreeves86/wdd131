@@ -558,6 +558,10 @@ th {
     top: 6.5rem;
 }
 
+.review-card {
+    padding: 1.5rem;
+}
+
 /*--organized submitted answer*/
 .review-details {
     display: grid;
@@ -573,6 +577,10 @@ th {
 }
 
 .review-detail-full {
+    grid-column: 1 / -1;
+}
+
+.review-label {
     display: block;
     color: var(--muted);
     font-size: 0.85rem;
@@ -583,7 +591,7 @@ th {
 
 .review-stars {
     color: var(--accent);
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1em;
 }
 
 .review-note {
